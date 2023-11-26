@@ -1,0 +1,241 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* css variables */
+:root {
+  --navbar-height: 60px;
+}
+
+/* navigation bar */
+#navbar {
+    position: absolute;
+    top: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* logo and image */
+/* #logo{
+    margin: 20px 20px;
+} */
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    margin: 15px 15px;
+}
+
+/* navigation bar list */
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.99;
+    top: 0px;
+    left: 0px;
+}
+
+#navbar ul li{
+    list-style: none;  /* dots vgera htane k liye */
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 30px;
+    text-decoration: none;  /* underline htane k liye */
+
+}
+
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home section  */
+#home{
+    display: flex;
+    flex-direction: column;
+    height: 581px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 150px;
+}
+
+#home::before{
+    content: "";
+    background: url("../images/hello.jpg") no-repeat center center/cover; /* center cover is basically to cover the whole page  */
+    position: absolute;
+    height: 82%;
+    width: 102%;
+    z-index: -1;
+    opacity: 0.45;
+    top: 0px;
+}
+
+#home h1{
+    color: #6f3941;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+#home p{
+    color: #6f3941;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* services section  */
+#services-container{
+/* background: url("../images/7.jpg") no-repeat center center/cover;
+opacity: 0.99; */
+}
+
+#services{
+    margin: 0px;
+    display: flex;
+    background: url("../images/7.jpg") no-repeat center center/cover;
+opacity: 0.99;
+}
+
+#services .box{
+border: 5px solid #18161b;
+padding: 34px;
+margin: 3px 5px;
+height: 400px;
+width: auto;
+border-radius: 28px;
+
+/* background-color: #a5886f; */
+z-index:  -1;
+opacity: 0.99;
+}
+
+#services .box img{
+    height: 50%;
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 30px;
+
+}
+
+/* apna section  */
+#apna-container{
+    opacity: 0.99; 
+    background-color: #c0c0c0;
+}
+#apna-section{
+    margin: 0px;
+    display: flex;
+    /* background: url("../images/7.jpg") no-repeat center center/cover;*/
+
+}
+
+#apna-section .box{
+border: 5px solid #18161b;
+padding: 0px;
+margin: 3px 5px;
+height: 425px;
+width: 400px;
+border-radius: 20px;
+
+/* background-color: #a5886f; */
+z-index:  -1;
+opacity: 0.99;
+}
+
+#apna-section .box img{
+    height: 88%;
+    width: 100%;
+    margin: auto;
+    display: block;
+    border-radius: 15px;
+   
+
+
+}
+/* contact section  */
+
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.6;
+    background-color: #a5886f;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 2px;
+    border: 2px solid brown;
+    border-radius: 5px;
+    
+}
+
+/* utility classes */
+.h-primary{
+    font-size: 4rem;
+    padding: 10px;
+    background-color: #c0c0c0;
+}
+
+.h-secondary{
+    font-size: 2.5rem;
+    padding: 10px;
+    color: rgb(111 57 65);
+}
+
+/* button  */
+#btn{
+    padding: 7px 7px;
+    border: 2px solid black;
+    background-color: beige;
+    color: black;
+    margin: 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 20px;
+}
+a:link{
+    text-decoration: none; 
+}
+a:visited{
+    color: black;
+}
+a:hover{
+    color: #6f3941;;
+}
+
+.center{
+    text-align: center;
+}
+
